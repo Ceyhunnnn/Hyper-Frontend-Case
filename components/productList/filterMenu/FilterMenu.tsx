@@ -100,7 +100,7 @@ const FilterMenu: FC = (): JSX.Element => {
           min={productRange?.min}
           max={productRange?.max}
           onChange={(e) => setRange(Number(e.target.value))}
-          className="accent-[#98418E]"
+          className="accent-[#EB5757]"
         />
         <ul className="flex justify-between items-end text-sm">
           <li>${productRange?.min}</li>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FC, JSX } from "react";
 
 const Banner: FC = (): JSX.Element => {
@@ -13,8 +12,8 @@ const Banner: FC = (): JSX.Element => {
           <b>Read More</b>
         </span>
       </div>
-      <div className="flex justify-end  w-[150px] overflow-hidden ">
-        <span className="w-[275px] overflow-hidden h-[180px] bg-[#3C7A89] "></span>
+      <div className="flex justify-end  w-[150px] overflow-hidden">
+        <span className="w-[275px] overflow-hidden h-[180px] bg-[#3C7A89]"></span>
         <span className="w-[300px] overflow-hidden h-[210px] bg-[#EB5757]  rotate-45"></span>
       </div>
     </div>

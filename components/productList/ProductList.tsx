@@ -15,7 +15,7 @@ const ProductList: FC = (): JSX.Element => {
     if (data?.length) {
       dispatch(setDefaultProducts(data));
     }
-  }, [data]);
+  }, [data, dispatch]);
 
   return (
     <>

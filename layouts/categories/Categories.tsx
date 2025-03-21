@@ -3,6 +3,7 @@ import { FC, JSX } from "react";
 const Categories: FC = (): JSX.Element => {
   return (
     <ul className="container py-5 mx-auto flex justify-between items-center text-sm font-semibold">
+      <li>New Arrivals</li>
       <li>Dresses</li>
       <li>Tops</li>
       <li>Jackets</li>

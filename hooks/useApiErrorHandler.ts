@@ -1,4 +1,4 @@
-import { IApiErrorResponse } from "@/types/ApiError.type";
+import { IApiErrorResponse } from "@/types/apiError.type";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 
 export const useApiErrorHandler = (
