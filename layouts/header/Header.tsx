@@ -5,8 +5,8 @@ import SearchArea from "./components/SearchArea";
 
 const Header: FC = (): JSX.Element => {
   return (
-    <header className="sticky top-0 z-50 w-full  shadow-sm  bg-[#FAFAFA] border-gray-200">
-      <div className="container mx-auto flex h-16 items-center justify-between ">
+    <header className="sticky top-0 z-50 w-full  shadow-sm  bg-[#FAFAFA] border-gray-200 p-4 md:p-0">
+      <div className="container mx-auto flex flex-col md:flex-row py-3 gap-y-4 md:h-16 items-center justify-between ">
         <Logo />
         <SearchArea />
         <RightMenu />

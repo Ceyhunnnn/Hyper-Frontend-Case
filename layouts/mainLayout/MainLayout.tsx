@@ -16,7 +16,7 @@ const MainLayout: FC<IProps> = ({ children }): JSX.Element => {
       </Head>
       <Header />
       <Categories />
-      <div className="h-full w-full min-h-screen">{children}</div>
+      {/*   <div className="h-full w-full min-h-screen">{children}</div>*/}
       <Footer />
     </>
   );

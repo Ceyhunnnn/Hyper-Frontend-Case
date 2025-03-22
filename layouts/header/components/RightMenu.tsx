@@ -5,12 +5,19 @@ import { useAppSelector } from "@/hooks/useRedux";
 import { FC, JSX, useState } from "react";
 import BasketContent from "./basketContent/BasketContent";
 
-const RightMenu: FC = (): JSX.Element => {
+interface IIprops {
+  inLogo?: boolean;
+}
+const RightMenu: FC<IIprops> = ({ inLogo }): JSX.Element => {
   const { basket } = useAppSelector((state) => state.basket);
   const basketItemCount: number = basket?.length;
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <div className="flex gap-x-3 items-center">
+    <div
+      className={`flex gap-x-3 items-center ${
+        inLogo ? "block md:hidden" : "hidden md:block"
+      }`}
+    >
       <ul className="flex gap-x-3 items-center text-sm text-[#6B7280] font-semibold">
         <li className="flex gap-x-2 cursor-pointer">
           Account
