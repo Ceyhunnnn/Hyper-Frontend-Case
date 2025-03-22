@@ -11,8 +11,8 @@ interface IProps {
 const BasketContentCard: FC<IProps> = ({ product }): JSX.Element => {
   const dispatch = useAppDispatch();
   return (
-    <li key={product.id} className="flex py-6">
-      <div className="size-24 shrink-0 overflow-hidden rounded-md border p-1 border-gray-200">
+    <li key={product.id} className="flex py-2 md:py-6">
+      <div className="size-16 md:size-24 shrink-0 overflow-hidden rounded-md border p-1 border-gray-200">
         <Image
           width={200}
           height={300}
@@ -22,13 +22,15 @@ const BasketContentCard: FC<IProps> = ({ product }): JSX.Element => {
         />
       </div>
 
-      <div className="ml-4 flex flex-1 flex-col">
+      <div className="ml-2 md:ml-4 flex flex-1 flex-col">
         <div>
           <div className="flex justify-between text-base font-medium text-gray-900">
             <h3>
-              <Link href={""}>{product.title}</Link>
+              <Link href={""} className="text-xs md:text-base line-clamp-2">
+                {product.title}
+              </Link>
             </h3>
-            <p className="ml-4">${product.price}</p>
+            <p className="ml-4 text-xs md:text-base">${product.price}</p>
           </div>
           <p className="mt-1 text-sm text-gray-500">{product.rating.rate}</p>
         </div>
@@ -37,7 +39,7 @@ const BasketContentCard: FC<IProps> = ({ product }): JSX.Element => {
             <button
               type="button"
               onClick={() => dispatch(deleteProductFromBasket(product.id))}
-              className="font-medium cursor-pointer text-indigo-600 hover:text-indigo-500"
+              className="font-medium cursor-pointer text-indigo-600 text-xs md:text-base hover:text-indigo-500"
             >
               Remove
             </button>

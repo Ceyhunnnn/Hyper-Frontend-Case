@@ -108,7 +108,7 @@ export default function Drawer({
               <Close />
             </button>
           </div>
-          <div className=" flex-1">{children}</div>
+          <div className="flex-1">{children}</div>
         </div>
       </div>
     </div>

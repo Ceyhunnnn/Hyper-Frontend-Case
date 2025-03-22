@@ -38,7 +38,7 @@ const BasketContentFooter: FC<IProps> = ({ setIsOpen }): JSX.Element => {
       <div className="mt-6">
         <Link
           href="#"
-          className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-1 py-3 text-base font-medium text-white shadow-xs hover:bg-indigo-700"
+          className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-1 py-3 text-xs md:text-base font-medium text-white shadow-xs hover:bg-indigo-700"
         >
           Checkout
         </Link>
@@ -49,7 +49,7 @@ const BasketContentFooter: FC<IProps> = ({ setIsOpen }): JSX.Element => {
           <button
             type="button"
             onClick={() => setIsOpen(false)}
-            className="font-medium text-indigo-600 hover:text-indigo-500"
+            className="font-medium text-xs md:text-base text-indigo-600 hover:text-indigo-500"
           >
             Continue Shopping
             <span aria-hidden="true"> &rarr;</span>

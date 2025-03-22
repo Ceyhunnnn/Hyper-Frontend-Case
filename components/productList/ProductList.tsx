@@ -24,7 +24,7 @@ const ProductList: FC = (): JSX.Element => {
       ) : (
         <div className="flex flex-col gap-x-3 items-start w-full">
           <Banner />
-          <div className="flex gap-x-5 items-start w-full container mx-auto">
+          <div className="flex flex-col gap-y-3 my-4 lg:my-0 lg:flex-row gap-x-5 px-4 lg:px-0 items-center lg:items-start w-full container mx-auto">
             <FilterMenu />
             <Products />
           </div>

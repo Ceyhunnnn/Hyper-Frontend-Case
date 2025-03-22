@@ -87,7 +87,7 @@ const FilterMenu: FC = (): JSX.Element => {
   }, [debouncedSearchQuery, dispatch]);
 
   return (
-    <div className="sticky  top-20 h-full    border border-gray-200 bg-[#F9FAFB] flex flex-col gap-y-3 py-10   px-5 max-w-[338px] w-full">
+    <div className="lg:sticky  lg:top-20 h-full    border border-gray-200 bg-[#F9FAFB] flex flex-col gap-y-3 py-10   px-5 md:max-w-[338px] w-full">
       <h2 className="font-semibold text-xl uppercase">Prices</h2>
       <div className="flex flex-col gap-y-2">
         <ul className="flex justify-between items-end text-sm">
@@ -125,7 +125,10 @@ const FilterMenu: FC = (): JSX.Element => {
           </div>
         );
       })}
-      <div className="flex justify-center items-center mt-5 z-50">
+      <div
+        className="flex justify-center items-center mt-5 
+      "
+      >
         <button
           onClick={() => {
             setFilterCategory([]);
